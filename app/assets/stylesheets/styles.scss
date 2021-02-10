@@ -1,11 +1,11 @@
 @import "_colors.scss";
+
 html {
   min-height: 100%;
   position: relative;
 
 }
 
-/* fix for side margins in Bootstrap */
 .row { margin: 0; padding: 0 }
 
 body {
@@ -153,39 +153,9 @@ hr {
   }
 }
 
-.badge {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  padding: 6px 12px;
-  font-size: 1em;
-  // border: 1px solid $gold;
-  color: $gold;
-  line-height: 1;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 100%;
-  transition: all .5s ease-in-out;
-}
 
 .bold {
   font-weight: 500;
-}
-
-.videowrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.videowrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 div {
@@ -253,48 +223,6 @@ div {
   justify-content: center;
 }
 
-.login-bg {
-  background-image: image-url('login.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  height: 800px;
-  max-width: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .login-form {
-    width: 300px;
-    max-width: 50%;
-    margin: 0px auto;
-    align-self: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-
-    h2 {
-      margin: 0 0 10px 0;
-    }
-
-    .actions {
-      margin: 0px auto;
-      text-align: center;
-      padding: 10px 0;
-    }
-  }
-}
-
-.share-this {
-  a {
-    color: #333;
-  }
-}
-
-
 .copyright {
   background-color: $white;
   margin: 0px auto;
@@ -305,50 +233,6 @@ div {
     color: $gold;
     font-size: 1em;
     padding: 10px 0 0;
-  }
-}
-
-.topbar {
-  background-color: $light-gray;
-
-  p {
-    padding: 0;
-    margin: 0;
-  }
-
-  .topbar-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .message {
-    padding: 10px 0;
-    display: block;
-    color: $white;
-    flex:1;
-    p {
-      display: block;
-    }
-  }
-
-  a {
-    color: $white;
-
-  }
-
-  p.pull-right {
-    margin-right: -5px;
-    padding: 10px 0;
-  }
-
-  .btn {
-    background-color: $eggshell;
-    color: $purple;
-    border-radius: 0;
-    padding: 8px 25px 5px;
-    font-family: 'Verlag';
-    font-size: .8em;
   }
 }
 
@@ -495,7 +379,6 @@ div {
     align-self: center;
   }
 
-  // Align text to center.
   .text-xs-center {
     text-align: center;
   }
