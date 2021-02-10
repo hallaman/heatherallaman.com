@@ -81,7 +81,24 @@
   }
 }
 
-#work {
+#work { 
+
+  .col {
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 0;
+
+    .info {
+      min-width: 300px;
+    }
+  }
+
+  h1 { 
+    font-size: .95em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
   .img-thumbnail {
       max-width: 300px;
       margin-bottom: 1em;
