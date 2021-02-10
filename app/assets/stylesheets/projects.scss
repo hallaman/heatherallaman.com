@@ -1,0 +1,133 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "colors.scss";
+
+.bg-light { 
+  color: $eggshell !important;
+}
+
+.welcome {
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+
+#home_header {
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.work-header {
+  background-color: $gold;
+  padding: 20px 0;
+
+  h2 {
+    color: $eggshell;
+  }
+}
+
+.lead {
+  background-color:  $light-gray;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+
+  h2.side {
+   color: $purple;
+   font-weight: normal;
+   margin-top: 0;
+   padding-right: 1em;
+  }
+
+  .blurb {
+    padding-left: .5em;
+  }
+
+}
+
+.lead::after {
+  content: '';
+  background: url('Heather_Allaman_Ring.png') center center / 200px 200px no-repeat;
+
+}
+
+.testimonial {
+  background-color: $gold;
+  a {
+    color: $light-gray;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: $light-gray;
+  }
+}
+
+.callout {
+  background-color: $purple;
+
+  h4 {
+    padding-bottom: 1em;
+  }
+
+  .btn {
+    margin-top: 0px !important;
+  }
+}
+
+#work {
+  .img-thumbnail {
+      max-width: 300px;
+      margin-bottom: 1em;
+  }
+}
+
+#about {
+  background: linear-gradient(to bottom, $eggshell, $eggshell 80%, $purple 20%);
+  .thumbnail img {
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    width: 90%;
+    max-width: 290px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .row {
+    padding: 100px 0;
+    > .col-sm-6 {
+      padding-right: 0;
+    }
+  }
+  .entry {
+    text-align: left;
+    padding: 15px 0;
+  }
+
+}
+
+#contact {
+  background: $purple;
+  color: $eggshell;
+
+  .tinymoon {
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  
+  #about {
+    background: $eggshell;
+  }
+
+}
+
