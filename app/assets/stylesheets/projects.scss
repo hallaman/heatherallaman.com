@@ -34,9 +34,9 @@
 }
 
 .lead {
+  position: relative;
   background-color:  $light-gray;
   padding: 0;
-  overflow: hidden;
   width: 100%;
 
   h2.side {
@@ -52,10 +52,16 @@
 
 }
 
-.lead::after {
-  content: '';
-  background: url('Heather_Allaman_Ring.png') center center / 200px 200px no-repeat;
-
+.lead::before {
+  content: "";
+  background: url('Heather_Allaman_Ring.png') right 0% top 30% no-repeat !important;
+  background-size: auto;
+  background-size: 30% auto !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -60px;
+  right: 0px;
 }
 
 .testimonial {
@@ -70,6 +76,7 @@
 }
 
 .callout {
+  position: relative;
   background-color: $purple;
 
   h4 {
@@ -81,16 +88,25 @@
   }
 }
 
+.callout::before {
+  content: "";
+  background: url('Heather_Allaman_Moons.png') center top no-repeat;
+  background-size: 12% auto !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -12%;
+  left: 0;
+}
+
+
 #work { 
 
   .col {
     width: 100%;
     margin: 0 auto;
     flex-grow: 0;
-
-    .info {
-      min-width: 300px;
-    }
+  
   }
 
   h1 { 
@@ -100,12 +116,14 @@
   }
 
   .img-thumbnail {
-      max-width: 300px;
-      margin-bottom: 1em;
+    margin-bottom: 1em;
   }
 }
 
+
+
 #about {
+  
   background: linear-gradient(to bottom, $eggshell, $eggshell 80%, $purple 20%);
   .thumbnail img {
     -moz-border-radius: 500px;

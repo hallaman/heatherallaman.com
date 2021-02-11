@@ -3,4 +3,10 @@ Rails.application.routes.draw do
   	root "projects#index"
 
 	get "/projects", to: "projects#index"
+
+	resources "contacts", only: [:new, :create]
+
+	match '/contacts', to: 'contacts#new', via: 'get'
+  
+
 end

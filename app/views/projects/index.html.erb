@@ -14,9 +14,9 @@
 		</div>
 	</div>
 
-	<div class="lead">
+	<div class="lead py-4">
 
-		<div class="row align-items-start d-flex m-5">
+		<div class="row align-items-start d-flex py-5">
 
 			<div class="col-sm-12 col-md-3 justify-content-sm-start justify-content-lg-end text-right">
 				<h2 class="side">Shopify + </h2>
@@ -46,7 +46,7 @@
 
 
 	<div class="testimonial">
-		<div class="row p-3">
+		<div class="row p-5">
 			<div class="col mx-auto my-3">
 				<h3 class="text-center">Some nice words from Sara some nice words<br /> from Sara. Some nice words from Sara me nice words from Sara.</h3>
 				<p></p>
@@ -56,14 +56,13 @@
 	</div>
 
 
-	<div class="m-5" id="work">
-		<div class="row">
-
-			<div class="col text-center mx-auto pb-5 align-self-center d-flex">
+	<div class="m-5 p-2" id="work">
+		<div class="row d-flex flex-wrap">
+			<div class="col-xs-12 col-md-4 text-center p-3 pb-5">
 				<a href="https://www.sweetthornflora.com" target="_blank">
-					<%= image_tag 'stf.png', class: 'img-thumbnail' %>
+					<%= image_tag 'stf.png', class: 'img-thumbnail img-fluid' %>
 				</a>
-				<div class="pl-3 align-self-center text-left info">
+				<div class="align-self-center text-left info">
 					<h1>SWEET THORN FLORA</h1>
 					<h2>Squarespace</h2>
 					
@@ -71,37 +70,58 @@
 					<%= link_to "VIEW SITE", "https://www.sweetthornflora.com", class: "btn btn-default btn-gold m-auto", target: '_blank' %>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-
-
-			<div class=" col text-center mx-auto pb-5 d-flex">
-				<a href="https://www.asalantaearthshop.com" target="_blank">
-					<%= image_tag 'asa.png', class: 'img-thumbnail' %>
+		
+			<div class="col-xs-12 col-md-4 text-center p-3 pb-5">
+				<a href="" target="_blank">
+					<%= image_tag 'island.png', class: 'img-thumbnail img-fluid' %>
 				</a>
-				<div class="pl-3 align-self-center text-left info">
+				<div class="align-self-center text-left info">
+					<h1>ISLAND HOUSE</h1>
+					<h2>Shopify</h2>
+					
+					<p >Designed by <a href="http://www.goodready.co" target="_blank">Good + Ready Design Co.</a></p>
+					<%= link_to "VIEW SITE", "", class: "btn btn-default btn-gold m-auto", target: '_blank' %>
+				</div>
+			</div>
+		
+			<div class="col-xs-12 col-md-4  text-center p-3 pb-5">
+				<a href="https://www.asalantaearthshop.com" target="_blank">
+					<%= image_tag 'asa.png', class: 'img-thumbnail img-fluid' %>
+				</a>
+				<div class="align-self-center text-left info">
 					<h1>ASALANTA EARTH SHOP</h1>
 					<h2>Shopify</h2>
-					<p>Internation wellness brand.</p>
+					<p>International wellness brand.</p>
 					<%= link_to "VIEW SITE", "http://www.asalantaearthshop.com", class: "btn btn-default btn-gold text-center m-auto", target: '_blank' %>
 				</div>
 				
 			</div>
-		</div>
-		<div class="row">
-
-
-			<div class=" col text-center mx-auto d-flex">
+		
+			<div class="col-xs-12 col-md-4  text-center p-3">
 				<a href="https://heathersmoonblog.herokuapp.com" target="_blank">
-					<%= image_tag 'mvg.png', class: 'img-thumbnail' %>
+					<%= image_tag 'mvg.png', class: 'img-thumbnail img-fluid' %>
 				</a>
-				<div class="pl-3 align-self-center text-left info">
+				<div class="align-self-center text-left info">
 					<h1>MOON BLOG</h1>
 					<h2>Built with Rails</h2>
 					<p>Robust, customizable membership site.</p>
 					<%= link_to "VIEW SITE", "https://heathersmoonblog.herokuapp.com", class: "btn btn-default btn-gold text-center m-auto", target: '_blank' %>
 				</div>
 			</div>
+
+			<div class="col-xs-12 col-md-4  text-center p-3">
+				<a href="http://arroyodesignhouse.com" target="_blank">
+					<%= image_tag 'arroyo.png', class: 'img-thumbnail img-fluid' %>
+				</a>
+				<div class="align-self-center text-left info">
+					<h1>ARROYO DESIGN HOUSE</h1>
+					<h2>Build with Javascript</h2>
+					<p>Portfolio site.</p>
+					<%= link_to "VIEW SITE", "http://arroyodesignhouse.com", class: "btn btn-default btn-gold text-center m-auto", target: '_blank' %>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4 text-center mx-auto"></div>
 
 
 		</div>
@@ -111,7 +131,7 @@
 		<div class="col text-center button mx-auto p-5">
 			<h4>Are you ready to get your beautiful designs online?</h4>
 
-			<%= link_to "LET'S WORK TOGETHER", "#contact", class: "btn btn-default ha-btn" %>
+			<%= link_to "LET'S WORK TOGETHER", contacts_path, class: "btn btn-default ha-btn" %>
 
 		</div>	
 	</div>
@@ -138,16 +158,10 @@
 	<div id="contact">
 		<div class="row p-5">
 			<div class="col text-center">
-				<h3>Let's Connect</h3>
-				<form class="px-5">
-				  <div class="form-group ">
-				    <label for="exampleInputEmail1">Email address</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1"5aria-describedby="emailHelp" placeholder="Enter email">
-				  
-				  </div>
-				  
-				  <button type="submit" class="btn ha-btn">Submit</button>
-				</form>	
+				<!-- <h3>Let's Connect</h>
+				<div class="footer-links">
+					
+				</div> -->
 			</div>			
 
 		</div>

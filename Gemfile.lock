@@ -67,6 +67,10 @@ GEM
     bindex (0.8.1)
     bootsnap (1.7.2)
       msgpack (~> 1.0)
+    bootstrap (4.3.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
@@ -102,6 +106,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
+    mail_form (1.9.0)
+      actionmailer (>= 5.2)
+      activemodel (>= 5.2)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
@@ -115,6 +122,7 @@ GEM
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     pg (1.2.3)
+    popper_js (1.16.0)
     public_suffix (4.0.6)
     puma (5.2.1)
       nio4r (~> 2.0)
@@ -172,6 +180,9 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (2.3.1)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -215,18 +226,21 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootsnap (>= 1.4.4)
+  bootstrap
   bootstrap-sass
   byebug
   capybara (>= 3.26)
   font_awesome5_rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  mail_form
   pg
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.1)
   sass-rails (>= 6)
   selenium-webdriver
+  simple_form
   spring
   sprockets
   sqlite3 (~> 1.4)
