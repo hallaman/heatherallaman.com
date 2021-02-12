@@ -1,0 +1,13 @@
+<div class="container">
+	<% flash.each do |name, msg| %>
+		<% if msg.is_a?(String) %>
+			<div class="alert alert-<%= name == :notice ? "success" : "error" %> fadein">
+	    		<a href="#" data-dismiss="alert" class="close">×</a>
+    			<div id="flash_<%= name %>">
+    				<%= msg %>
+    			</div>
+    		</div>
+    	<% end %>
+    <% end%>
+</div>
+
