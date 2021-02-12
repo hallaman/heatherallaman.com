@@ -131,7 +131,7 @@
 		<div class="col text-center button mx-auto p-5">
 			<h4>Are you ready to get your beautiful designs online?</h4>
 
-			<%= link_to "LET'S WORK TOGETHER", contacts_path, class: "btn btn-default ha-btn" %>
+			<%= link_to "LET'S WORK TOGETHER", "/#contact", class: "btn btn-default ha-btn" %>
 
 		</div>	
 	</div>
@@ -158,10 +158,8 @@
 	<div id="contact">
 		<div class="row p-5">
 			<div class="col text-center">
-				<!-- <h3>Let's Connect</h>
-				<div class="footer-links">
-					
-				</div> -->
+				<h4>Let's Connect</h4>
+				<%= render 'contact_form' %>
 			</div>			
 
 		</div>

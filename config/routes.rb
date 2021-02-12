@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
 	get "/projects", to: "projects#index"
 
-	resources "contacts", only: [:new, :create]
+	resources :projects, only: [:index, :new, :create]
 
-	match '/contacts', to: 'contacts#new', via: 'get'
 end
