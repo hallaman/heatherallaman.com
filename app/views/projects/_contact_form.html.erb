@@ -1,24 +1,27 @@
       
 <h4>Let's Connect</h4>
-<div class="text-center" id="flash-message">
+<div class="text-center col-sm-6 align-self-center m-auto" id="flash-message">
     <%= render 'flash' %>
 </div>
-<%= simple_form_for @contact, url: projects_path, remote: true, :html => {:class => 'form-horizontal pt-2'} do |f| %>
-        <%= f.label :name %></br>
-        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
 
-        <%= f.label :email %></br>
-        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+<%= simple_form_for @contact, url: projects_path, remote: true, :html => {:class => 'form-horizontal pt-2 col-sm-6 align-self-center m-auto'} do |f| %>
+    
+    <%= f.error_notification %>
+      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                        placeholder: "Send me a message"%></br>
+        <%= f.input :name, label: 'Your name', required: true, error: 'Please include your name' %>
 
-      <div class= "hidden">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
-      </div>
+        <%= f.input :email, label: 'Your email', required: true, error: 'Please use a valid email address' %>
+
+        <%= f.input :message, label: 'Your project', rows: 8, cols: 40, required: true, 
+                          placeholder: "Tell me a little about your project", as: :text %>
+
+        <div class= "hidden">
+          <%= f.label :nickname %>
+          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+        </div>
 
       <%= f.submit 'Send Message', class: 'btn ha-btn' %>
 <% end %>
+
   

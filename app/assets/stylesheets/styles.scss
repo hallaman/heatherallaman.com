@@ -10,6 +10,11 @@ html {
 
 .hidden { display: none; }
 
+.alert-success {
+  color: $blackish;
+  background-color: $light-gray;
+}
+
 body {
   font-family: 'Crimson', Palatino, serif;
   background-color: $white;
