@@ -1,10 +1,10 @@
       
 <h4>Let's Connect</h4>
-<div class="text-center col-sm-6 align-self-center m-auto" id="flash-message">
+<div class="text-center col-sm-10 col-md-6 align-self-center m-auto" id="flash-message">
     <%= render 'flash' %>
 </div>
 
-<%= simple_form_for @contact, url: projects_path, remote: true, :html => {:mulitpart => true, :class => 'form-horizontal pt-2 col-sm-6 align-self-center m-auto'} do |f| %>
+<%= simple_form_for @contact, url: projects_path, remote: true, :html => {:mulitpart => true, :class => 'form-horizontal pt-2 col-sm-10 col-md-6 align-self-center m-auto'} do |f| %>
     
     <%= f.error_notification %>
       <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
