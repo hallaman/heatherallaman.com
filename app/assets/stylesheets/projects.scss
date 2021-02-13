@@ -19,7 +19,7 @@
 }
 
 #home_header {
-  background-image: url('hero.jpg');
+  background-image: asset-url('hero.jpg');
   background-position: top center;
   background-size: cover;
 
@@ -59,7 +59,7 @@
 
 .lead::before {
   content: "";
-  background: url('Heather_Allaman_Ring.png') right 0% top 30% no-repeat !important;
+  background: asset-url('Heather_Allaman_Ring.png') right 0% top 30% no-repeat !important;
   background-size: auto;
   background-size: 30% auto !important;
   width: 100%;
@@ -95,7 +95,7 @@
 
 .callout::before {
   content: "";
-  background: url('Heather_Allaman_Moons.png') center top no-repeat;
+  background: asset-url('Heather_Allaman_Moons.png') center top no-repeat;
   background-size: 12% auto !important;
   width: 100%;
   height: 100%;
