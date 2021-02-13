@@ -36,6 +36,7 @@ gem 'font_awesome5_rails'
 
 gem 'mail_form'
 gem 'simple_form'
+gem 'attach'
 
 group :production do
   gem "pg"

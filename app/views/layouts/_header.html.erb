@@ -7,15 +7,14 @@
 
   <div class="collapse navbar-collapse justify-content-end" id="navbar">
     <ul class="navbar-nav mr-1 mt-2 mt-lg-0  justify-content-end text-right">
-      <li class="nav-item active">
-        <a class="nav-link" href="/#work">PAST PROJECTS</a>
+      <li class="nav-item">
+        <%= link_to 'PROJECTS', projects_path(anchor: 'work'), :class => 'nav-link' %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/#about">ABOUT</a>
+        <%= link_to 'ABOUT', projects_path(anchor: 'about'), :class => 'nav-link' %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/#contact">CONTACT</a>
-      </li>
+        <%= link_to 'CONTACT', projects_path(anchor: 'contact'), :class => 'nav-link' %>
     </ul>
   </div>
   
