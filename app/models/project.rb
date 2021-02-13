@@ -10,7 +10,7 @@ class Project < MailForm::Base
 
   def ok_format?
     ext = File.extname(file_upload)
-    if !%w( .jpg .jpeg .png .pdf .bmp .docx .doc .tiff .ai .psd .raw .xd .dng ).include? ext.downcase
+    if !%w( .jpg .jpeg .png .pdf .bmp .eps .docx .doc .tiff .ai .psd .raw .xd .dng ).include? ext.downcase
       self.errors.add(:file_upload, ext + " not a valid file type. Only images, PDFs, and design files allowed.")
     end
   end
