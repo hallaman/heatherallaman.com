@@ -11,9 +11,24 @@ html {
 .hidden { display: none; }
 
 .alert-success {
-  color: $blackish;
+  color: $green;
   background-color: $light-gray;
+  border-color: $green;
+  font-family: 'Verlag';
 }
+
+.alert-danger {
+  color: $blue;
+  background-color: $light-gray;
+  border-color: $blue;
+  font-family: 'Verlag';
+  text-transform: uppercase;
+}
+
+.invalid-feedback {
+  padding: 1em;
+}
+
 
 body {
   font-family: 'Crimson', Palatino, serif;
