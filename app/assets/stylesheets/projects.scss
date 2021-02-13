@@ -55,6 +55,19 @@
     padding-left: .5em;
   }
 
+  ul {
+    margin: 0 0 0 16px;
+    padding: 0; 
+    list-style-type: none;
+  }
+
+  li:before {    
+    font-family: 'Font Awesome 5 Free';
+    content: '\f165';
+    margin: 0 5px 0 -18px;
+    color: $gold;
+  }
+
 }
 
 .lead::before {
@@ -129,7 +142,7 @@
 
 #about {
   
-  background: linear-gradient(to bottom, $eggshell, $eggshell 80%, $purple 20%);
+  background: linear-gradient(to bottom, $light-gray, $light-gray 80%, $purple 20%);
   .thumbnail img {
     -moz-border-radius: 500px;
     border-radius: 500px;
