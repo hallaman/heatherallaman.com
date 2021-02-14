@@ -38,7 +38,7 @@
   }
 }
 
-.problem {
+.lead {
   position: relative;
   background-color:  $light-gray;
   padding: 0;
@@ -71,16 +71,16 @@
 
 }
 
-.problem::before {
+.lead::before {
   content: "";
-  background: asset-url('Heather_Allaman_Ring.png') right -60px top 30% no-repeat !important;
+  background: asset-url('Heather_Allaman_Ring.png') right 0% top 30% no-repeat !important;
+  background-size: auto;
   background-size: 30% auto !important;
   width: 100%;
   height: 100%;
   position: absolute;
   top: -60px;
   right: 0px;
-  overflow: hidden;
 }
 
 .solution::before {
@@ -129,22 +129,12 @@
     margin: 0 5px 0 -18px;
     color: $eggshell;
   }
-
-}
-
-.testimonial::before {
-  content: "";
-  background: asset-url('Heather_Allaman_Triangle.png') left 15% top 0% / contain no-repeat !important;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
 }
 
 .testimonial {
   position: relative;
   background-color: $green;
+
   a {
     color: $light-gray;
   }
@@ -163,7 +153,6 @@ testimonial::after {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  transform: scaleX(-1);
 }
 
 .callout {
@@ -216,7 +205,6 @@ testimonial::after {
 #about {
   
   background: linear-gradient(to bottom, $light-gray, $light-gray 80%, $purple 20%);
-
   .thumbnail img {
     -moz-border-radius: 500px;
     border-radius: 500px;
@@ -240,21 +228,9 @@ testimonial::after {
 
 }
 
-#about::before {
-  content: "";
-  background: asset-url('Heather_Allaman_Ring.png') left 0% bottom 0% no-repeat !important;
-  background-size: 20% auto !important;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: -20px;
-}
-
 #contact {
   background: $purple;
   color: $eggshell;
-  position: relative;
 
   #new_project {
     background: $purple;
@@ -262,7 +238,8 @@ testimonial::after {
 }
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 576px) {
   
   #about {
     background: $light-gray;
