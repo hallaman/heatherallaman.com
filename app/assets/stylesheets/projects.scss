@@ -45,10 +45,11 @@
   width: 100%;
 
   h2.side {
-   color: $purple;
+   color: $gold;
    font-weight: normal;
    margin-top: 0;
    padding-right: 1em;
+   white-space: nowrap;
   }
 
   .blurb {
@@ -82,17 +83,33 @@
   overflow: hidden;
 }
 
+.solution::before {
+  content: "";
+  background: asset-url('Heather_Allaman_Ring.png') left -60px bottom 0px no-repeat !important;
+  background-size: 20% auto !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: -60px;
+}
+
 .solution {
+  background: linear-gradient(to bottom, $gold, $gold 80%, $white 20%);
+  padding: 0 2rem 4rem;
+
   position: relative;
   background-color:  $gold;
-  padding: 0;
   width: 100%;
+  flex-direction: column;
 
-  h2.side {
-   color: $purple;
+  h2 {
+   color: $blue;
+  }
+
+  h2.side {  
+   color: $eggshell;
    font-weight: normal;
-   margin-top: 0;
-   padding-right: 1em;
   }
 
   .blurb {
@@ -103,18 +120,30 @@
     margin: 0 0 0 16px;
     padding: 0; 
     list-style-type: none;
+    color: $eggshell;
   }
 
   li:before {    
     font-family: 'Font Awesome 5 Free';
     content: '\f164';
     margin: 0 5px 0 -18px;
-    color: $green;
+    color: $eggshell;
   }
 
 }
 
+.testimonial::before {
+  content: "";
+  background: asset-url('Heather_Allaman_Triangle.png') left 15% top 0% / contain no-repeat !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .testimonial {
+  position: relative;
   background-color: $green;
   a {
     color: $light-gray;
@@ -123,6 +152,18 @@
     text-decoration: underline;
     color: $light-gray;
   }
+}
+
+testimonial::after {
+  content: "";
+  background: asset-url('Heather_Allaman_Triangle.png') right 0% bottom 0% no-repeat !important;
+  background-size: 20% auto !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transform: scaleX(-1);
 }
 
 .callout {

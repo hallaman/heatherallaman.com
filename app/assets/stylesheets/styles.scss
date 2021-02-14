@@ -106,6 +106,16 @@ b {
   font-size: 1em;
 }
 
+ul {
+  font-family: 'Verlag', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .75em;
+  line-height: 1em;
+  color: $green;
+  margin: 1em 0;
+}
+
 .allcaps {
   font-family: 'Verlag', Arial, sans-serif;
   text-transform: uppercase;
@@ -155,7 +165,7 @@ ul {
 }
 
 .border-right {
-  border-right: 3px solid $light-gray !important;
+  border-right: 3px solid $eggshell !important;
   border-top: 0;
   z-index: 1;
 }
