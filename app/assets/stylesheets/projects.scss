@@ -134,6 +134,10 @@
 .testimonial {
   background: asset-url('Heather_Allaman_Triangle.png') left 20% top / contain no-repeat $green;
 
+  h3 {
+    text-transform: none;
+  }
+
   a {
     color: $light-gray;
   }
