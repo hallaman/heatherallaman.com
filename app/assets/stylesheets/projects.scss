@@ -6,7 +6,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "colors.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
 
 .bg-light { 
   color: $eggshell !important;
