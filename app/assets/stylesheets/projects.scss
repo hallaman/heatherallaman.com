@@ -242,3 +242,19 @@
 
 }
 
+@media (max-width: 414px) {
+  
+  .solution {
+    background: $gold;
+    padding: 0 2rem 0rem;
+  }
+
+  .callout::before {
+    background-size: 22% auto !important;
+    top: -7% !important;
+  }
+
+
+}
+
+
