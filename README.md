@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+RAILS_ENV=production bundle exec rake assets:precompile
