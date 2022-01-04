@@ -12,7 +12,7 @@ module Heather
     config.load_defaults 6.1
 
     #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-    #config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = false
 
     # Configuration for the application, engines, and railties goes here.
     #
