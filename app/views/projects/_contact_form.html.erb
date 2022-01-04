@@ -9,11 +9,11 @@
     <%= f.error_notification %>
       <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-        <%= f.input :name, label: 'Your name', required: true, error: 'Please include your name' %>
+        <%= f.input :name, label: 'Name', required: true, error: 'Please include your name' %>
 
-        <%= f.input :email, label: 'Your email', required: true, error: 'Please use a valid email address' %>
+        <%= f.input :email, label: 'Email', required: true, error: 'Please use a valid email address' %>
 
-        <%= f.input :message, label: 'Your project', rows: 8, cols: 40, required: true, 
+        <%= f.input :message, label: 'Project', rows: 8, cols: 40, required: true, 
                           placeholder: "Tell me a little about your project", as: :text %>
 
         <%#= f.input :project_due, as: :date, start_year: Date.today.year,

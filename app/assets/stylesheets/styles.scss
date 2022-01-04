@@ -166,10 +166,12 @@ ul {
   z-index: 1;
 }
 
-.border-right {
-  border-right: 3px solid $eggshell !important;
+.border-left-egg {
+  border-left: 3px solid $eggshell !important;
   border-top: 0;
   z-index: 1;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 hr {
@@ -352,16 +354,9 @@ div {
 }
 
 
-.contact-form {
-  label {
-    display: none;
-  }
-  .form-group {
-    margin: 0 5px;
-    padding: 10px 0;
-  }
-}
 
+input, textarea { padding: 1em !important; }
+.form-control { height: auto !important; }
 
 @media (min-width: 767px) {
 
