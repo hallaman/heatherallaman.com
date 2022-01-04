@@ -27,11 +27,11 @@
 					<h1>Bringing your designs to life</h1>
 					<h2>Need help getting your designs online?</h2>
 
-					<p>I work with designers who need a skilled developer to get the job done with efficiency and solid communication. </p>
+					<p>I work with designers who need a skilled developer to get the job done. With solid communication at the forefront, working with me means working efficiently. </p>
 
 					<p>Getting your designs on Shopify and Squarespace platforms can be challenging. You might find it's:</p>
 					<p><ul class="text-left">
-						<li>time consuming</li>
+						<li>time consuming to figure out the details</li>
 						<li>not the best use of your skills</li>
 						<li>frustrating to work within in the limits of a template</li>
 					</ul></p>
@@ -49,7 +49,7 @@
 
 	
 
-	<div class="m-5 ml-5 mr-5 mt-0 pb-2 pl-2 pr-2 pt-0" id="work">
+	<div class="m-5 mb-0 p-2 pt-3 pb-0" id="work">
 		<div class="row d-flex flex-wrap">
 			<div class="col-xs-12 col-md-4 text-center px-3 pb-5">
 				<a href="https://www.westchestertherapy.com" target="_blank">
@@ -86,31 +86,6 @@
 					
 				</div>
 			</div>
-		
-			<!-- <div class="col-xs-12 col-md-4  text-center p-3 pb-5">
-				<a href="https://www.asalantaearthshop.com" target="_blank">
-					<%#= image_tag 'asa.png', class: 'img-thumbnail img-fluid' %>
-				</a>
-				<div class="align-self-center text-left info">
-					<h1>ASALANTA EARTH SHOP</h1>
-					<h2>Shopify</h2>
-					<p>International wellness brand.</p>
-					<%#= link_to "VIEW SITE", "http://www.asalantaearthshop.com", class: "btn btn-default btn-gold text-center m-auto", target: '_blank' %>
-				</div>
-				
-			</div> 
-		
-			<div class="col-xs-12 col-md-4  text-center px-3 pb-5">
-				<a href="https://heathersmoonblog.herokuapp.com/blog" target="_blank">
-					<%#= image_tag 'mvg.png', class: 'img-thumbnail img-fluid' %>
-				</a>
-				<div class="align-self-center text-left info">
-					<h1>MOON BLOG</h1>
-					<h2>Built with Rails</h2>
-					<p>Robust, customizable membership site.</p>
-					<%#= link_to "VIEW SITE", "https://heathersmoonblog.herokuapp.com/blog", class: "btn btn-default btn-gold text-center m-auto", target: '_blank' %>
-				</div>
-			</div>
 
 			<div class="col-xs-12 col-md-4  text-center px-3 pb-5">
 				<a href="http://arroyodesignhouse.com" target="_blank">
@@ -121,7 +96,21 @@
 					<h2>Built with Javascript</h2>
 					<p>Portfolio site.</p>
 				</div>
-			</div>-->
+			</div>
+		
+		
+			<div class="col-xs-12 col-md-4  text-center px-3 pb-5">
+				<a href="https://heathersmoonblog.herokuapp.com/blog" target="_blank">
+					<%= image_tag 'mvg.png', class: 'img-thumbnail img-fluid' %>
+				</a>
+				<div class="align-self-center text-left info">
+					<h1>MOON BLOG</h1>
+					<h2>Built with Rails</h2>
+					<p>Customizable membership site.</p>
+				</div>
+			</div>
+
+			
 
 			<div class="col-xs-12 col-md-4 text-center mx-auto"></div>
 
@@ -134,20 +123,20 @@
 		<div class="row align-items-start d-flex py-5">
 
 			<div class="col-sm-12 col-md-3 justify-content-sm-start justify-content-lg-end text-right">
-				<h2 class="side">How I Can Help +</h2>
+				<h2 class="side">how I can help +</h2>
 			</div>
 
 			<div class="entry col-sm-12 col-md-8 text-left border-left-egg">
 				<div class="text-left blurb">
 					<h1>Creating more time for you</h1>
 
-					<h2>Improve your workflow by:</h2>
+					<h2>Working with me lends you more:</h2>
 
 					<ul class="text-left">
 
-						<li class="pb-3">having freedom to design for the look you want</li>
-						<li class="pb-3">having confidence that your site won't look like others</li>
-						<li class="pb-0">having time to focus on the work you do best </li>
+						<li class="pb-3">freedom to design for the look you want</li>
+						<li class="pb-3">confidence that your site won't look like others</li>
+						<li class="pb-0">time to focus on the work you do best </li>
 
 					</ul>
 				</div>
@@ -179,9 +168,9 @@
 
 	<div class="row callout">
 		<div class="col text-center button mx-auto p-5">
-			<h4>Are you ready to ease your workflow?</h4>
+			<h4>Are you ready to bring ease back into your workflow?</h4>
 
-			<%= link_to "LET'S WORK TOGETHER", projects_path(anchor: 'contact'), class: "btn btn-default ha-btn" %>
+			<%= link_to "LET'S COLLABORATE", projects_path(anchor: 'contact'), class: "btn btn-default ha-btn" %>
 
 		</div>	
 	</div>
@@ -214,8 +203,14 @@
 
 	<div id="contact">
 		<div class="row p-3">
-			<div class="col text-center" id="contact-form">
-				<%= render 'contact_form' %>
+			<div class="col text-center justify-content-center" id="contact-form">
+			<div class="row p-5">
+			<div class="col-sm-6 mx-auto text-center">
+				<h1 class="text-center">WRITE ME</h1>
+				<p class="text-center">If you think we could be a good fit for you next project, please get in touch!</p>
+			</div>
+			</div>
+			<%= render 'contact_form' %>
 			</div>			
 
 		</div>

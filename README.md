@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-RAILS_ENV=production bundle exec rake assets:precompile
+rake assets:precompile --trace RAILS_ENV=production
